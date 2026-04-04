@@ -1,0 +1,3 @@
+Add product images here.
+Product images are served from Cloudinary CDN (managed via admin panel).
+This directory is for any locally managed product images if needed.

@@ -1,0 +1,3 @@
+Place the FSSAI certificate PDF here as: fssai-certificate.pdf
+It will be rendered inline via PDF.js on the About page.
+No download button will be shown.

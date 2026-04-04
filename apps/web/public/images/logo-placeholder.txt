@@ -1,0 +1,3 @@
+Place the brand logo here as logo.png or logo.svg
+This placeholder indicates where the logo file should go.
+The layout header references /images/logo.png
