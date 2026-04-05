@@ -12,7 +12,7 @@ router = APIRouter(prefix="/products", tags=["products"])
 ALLOWED_IMAGE_TYPES = {"image/jpeg", "image/png", "image/webp", "image/gif", "image/avif"}
 
 
-@router.get("/", response_model=list[Product])
+@router.get("", response_model=list[Product])
 def get_products(is_admin: bool = Depends(get_optional_admin)):
     if is_admin:
         return product_repo.find_all()
@@ -27,7 +27,7 @@ def get_product(product_id: str):
     return product
 
 
-@router.post("/", response_model=Product, status_code=201)
+@router.post("", response_model=Product, status_code=201)
 async def create_product(
     name: str = Form(...),
     description: str = Form(...),

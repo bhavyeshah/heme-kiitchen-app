@@ -13,6 +13,7 @@ app = FastAPI(
     title="Hémé Kiitchen API",
     description="Backend API for Hémé Kiitchen — Premium Jain-friendly Dips",
     version="2.0.0",
+    redirect_slashes=False,
 )
 
 # ── CORS ──────────────────────────────────────────────────────────────────────

@@ -41,7 +41,7 @@ def _calc_delivery_charges(delivery_type: DeliveryType, total_price: float) -> b
 
 # ── GET /api/orders — admin only ──────────────────────────────────────────────
 
-@router.get("/", response_model=list[Order])
+@router.get("", response_model=list[Order])
 def get_orders(
     source: Optional[str] = Query(None),
     status: Optional[str] = Query(None),
@@ -82,7 +82,7 @@ def get_order(order_id: str, _: dict = Depends(require_admin)):
 
 # ── POST /api/orders — public or admin ───────────────────────────────────────
 
-@router.post("/", response_model=Order, status_code=201)
+@router.post("", response_model=Order, status_code=201)
 async def create_order(
     payload: CreateOrderPayload,
     request: Request,

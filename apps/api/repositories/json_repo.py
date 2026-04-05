@@ -27,4 +27,4 @@ def write_json(filename: str, data: list | dict) -> None:
     fp.parent.mkdir(parents=True, exist_ok=True)
     tmp = Path(str(fp) + ".tmp")
     tmp.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
-    tmp.rename(fp)
+    tmp.replace(fp)  # replace() works atomically on Windows; rename() fails if destination exists

@@ -7,12 +7,12 @@ from repositories import site_content_repo
 router = APIRouter(prefix="/site-content", tags=["site-content"])
 
 
-@router.get("/", response_model=SiteContent)
+@router.get("", response_model=SiteContent)
 def get_site_content():
     return site_content_repo.get()
 
 
-@router.patch("/", response_model=SiteContent)
+@router.patch("", response_model=SiteContent)
 def update_site_content(
     payload: PatchSiteContentPayload,
     _: dict = Depends(require_admin),
