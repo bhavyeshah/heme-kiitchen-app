@@ -4,22 +4,22 @@
     "name": "Classic Hummus",
     "description": "Smooth, creamy chickpea hummus made with tahini, lemon, and cumin. A timeless Jain-friendly classic.",
     "price": 260,
-    "image_path": "https://res.cloudinary.com/ditwwndir/image/upload/v1775330659/heme-kiitchen/products/wkdnpix63o9706wslscn.jpg",
-    "cloudinary_public_id": "heme-kiitchen/products/wkdnpix63o9706wslscn",
+    "image_path": "https://res.cloudinary.com/ditwwndir/image/upload/v1775390162/heme-kiitchen/products/jmaeomdeijo5tqosfksf.jpg",
+    "cloudinary_public_id": "heme-kiitchen/products/jmaeomdeijo5tqosfksf",
     "status": "active",
     "created_at": "2026-04-04T00:00:00.000Z",
-    "updated_at": "2026-04-04T19:24:20.014Z"
+    "updated_at": "2026-04-05T11:56:04.166Z"
   },
   {
     "id": "prod-002",
-    "name": "Roasted Red Pepper Dip",
-    "description": "Sweet, smoky roasted red peppers blended with cashews and a hint of chilli. Bold flavour, Jain-friendly.",
-    "price": 349,
-    "image_path": "",
-    "cloudinary_public_id": "",
-    "status": "inactive",
+    "name": "Ember Red Hummus",
+    "description": "Chickpeas blended with smoky roasted red peppers and tahini. Bold flavour, Jain-friendly.",
+    "price": 270,
+    "image_path": "https://res.cloudinary.com/ditwwndir/image/upload/v1775390318/heme-kiitchen/products/hsc5kc4pivnp7pd5kvx7.jpg",
+    "cloudinary_public_id": "heme-kiitchen/products/hsc5kc4pivnp7pd5kvx7",
+    "status": "active",
     "created_at": "2026-04-04T00:00:00.000Z",
-    "updated_at": "2026-04-04T19:24:38.863Z"
+    "updated_at": "2026-04-05T11:58:41.843Z"
   },
   {
     "id": "prod-003",
