@@ -13,6 +13,12 @@ apps/web/out/
 # API build output
 apps/api/dist/
 
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+
 # Logs
 *.log
 npm-debug.log*

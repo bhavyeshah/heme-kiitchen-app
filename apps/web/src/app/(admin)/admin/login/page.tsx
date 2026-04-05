@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Image from 'next/image';
-import { apiFetch } from '@/lib/api';
+import { apiFetch, setToken } from '@/lib/api';
 import { Suspense } from 'react';
 import AdminHeader from '@/components/AdminHeader';
 
@@ -21,10 +21,11 @@ function LoginForm() {
     setError('');
     setLoading(true);
     try {
-      await apiFetch('/api/auth/login', {
+      const data = await apiFetch<{ access_token: string }>('/api/auth/login', {
         method: 'POST',
         body: JSON.stringify({ password }),
       });
+      setToken(data.access_token);
       router.push(from);
     } catch {
       setError('Incorrect password. Please try again.');

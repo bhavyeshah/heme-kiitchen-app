@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(openspec status:*)",
+      "Bash(openspec instructions:*)",
+      "Bash(poetry --version)",
+      "Bash(pip --version)",
+      "Bash(pip3 --version)",
+      "Bash(where python:*)",
+      "Bash(pip install:*)",
+      "Bash(python -m poetry --version)",
+      "Bash(python -m poetry init --name \"heme-kiitchen-api\" --description \"Hémé Kiitchen FastAPI backend\" --author \"Bhavyesh Shah\" --python \"^3.12\" --no-interaction)",
+      "Bash(python:*)",
+      "Bash(curl -s http://localhost:4000/api/health)",
+      "Bash(curl -s http://localhost:4000/openapi.json)",
+      "Bash(npm install:*)",
+      "Bash(mkdir -p /d/Tech/Bhavyesh/MyProjects/HemeKiitchen/heme-kiitchen-app/apps/web/src/types)",
+      "Bash(npm run:*)",
+      "Bash(kill %1)",
+      "Bash(git add:*)",
+      "Bash(git rm:*)"
+    ]
+  }
+}

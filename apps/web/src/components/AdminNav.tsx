@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { apiFetch } from '@/lib/api';
+import { apiFetch, clearToken } from '@/lib/api';
 
 const NAV_LINKS = [
   { href: '/admin', label: 'Orders', exact: true },
@@ -21,6 +21,7 @@ export default function AdminNav() {
     } catch {
       // ignore
     }
+    clearToken();
     router.push('/admin/login');
   };
 
